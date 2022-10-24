@@ -4,28 +4,22 @@ const validatorResult = require("../utils/handleValidator")
 const validatorPostItem = [
   check("tipoVuelo")
     .exists()
-    .notEmpty()
-    .isObject(),
+    .notEmpty(),
   check("paisOrigen")
     .exists()
-    .notEmpty()
-    .isString(),
+    .notEmpty(),
   check("paisDestino")
     .exists()
-    .notEmpty()
-    .isString(),
+    .notEmpty(),
   check("fechaSalida")
     .exists()
-    .notEmpty()
-    .isString(),
+    .notEmpty(),
   check("fechaLlegada")
     .exists()
-    .notEmpty()
-    .isString(),
+    .notEmpty(),
     check("cupon")
     .exists()
-    .notEmpty()
-    .isBoolean(),
+    .notEmpty(),
   check("totalPersonas")
     .exists()
     .notEmpty(),
