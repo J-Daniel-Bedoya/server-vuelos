@@ -5,7 +5,7 @@ const validatorPostItem = [
   check("tipoVuelo")
     .exists()
     .notEmpty()
-    .isBoolean(),
+    .isObject(),
   check("paisOrigen")
     .exists()
     .notEmpty()

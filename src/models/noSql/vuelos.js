@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const VuelosScheme = new mongoose.Schema(
   {
     tipoVuelo: {
-      type: Boolean
+      type: Object
     },
     paisOrigen: {
       type: String
